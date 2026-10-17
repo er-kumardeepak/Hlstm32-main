@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink font-display antialiased;
+}
+
+/* Neobrutalist primitives */
+.nb-card {
+  @apply bg-white border-brutal border-ink shadow-brutal rounded-lg;
+}
+
+.nb-btn {
+  @apply inline-flex items-center gap-2 border-brutal border-ink rounded-lg px-4 py-2 font-semibold
+         bg-white text-ink shadow-brutal-sm transition-all
+         hover:-translate-y-0.5 hover:shadow-brutal
+         active:translate-x-[3px] active:translate-y-[3px] active:shadow-none
+         disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.nb-input {
+  @apply bg-white border-brutal border-ink rounded-lg px-3 py-2 font-mono text-sm
+         shadow-brutal-sm focus:outline-none focus:ring-2 focus:ring-accent-yellow;
+}
